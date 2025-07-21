@@ -1,0 +1,112 @@
+{
+  "PROJECT_NAME": {
+    "type": "string",
+    "description": "The official name of the project."
+  },
+  "project_codebase": {
+    "type": "string",
+    "description": "The import path or codebase location for the project (e.g., github.com/example/rate-limiter)."
+  },
+  "project_requirements": {
+    "type": "string",
+    "description": "The project requirements, specifications, or inline freeform description - includes functional and non-functional requirements. Ideally markdown formatted. Should be explicit and detailed."
+  },
+  "programming_language": {
+    "type": "string",
+    "description": "The programming language for this project (e.g., Go, Python, Rust)."
+  },
+  "language_version": {
+    "type": "string",
+    "description": "The required version of the programming language or toolchain (e.g., 1.22 for Go)."
+  },
+  "component_description": {
+    "type": "string",
+    "description": "A one-line description of what the main component/library/app does."
+  },
+  "project_spec": {
+    "type": "string",
+    "description": "Reference to the project specification, requirements doc, or inline freeform description."
+  },
+  "requirements": {
+    "type": "string",
+    "description": "Key requirements for functionality, security, design, or compliance (can be a file or text)."
+  },
+  "environment_setup": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    },
+    "description": "Steps, tools, or commands needed to set up the local environment for the project."
+  },
+  "scaffold_spec": {
+    "type": "object",
+    "properties": {
+      "folders": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "List of required folders for the initial project structure."
+      },
+      "files": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "List of files required at project scaffold step."
+      }
+    },
+    "description": "Specifies initial folders and files required for a valid scaffold."
+  },
+  "milestones": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Milestone name." },
+        "description": {
+          "type": "string",
+          "description": "What is implemented in this milestone."
+        }
+      }
+    },
+    "description": "Ordered list of milestones, each with a name and description."
+  },
+  "test_script": {
+    "type": "string",
+    "description": "Path to script/command to run tests and verify correctness (e.g., scripts/test.sh)."
+  },
+  "lint_script": {
+    "type": "string",
+    "description": "Script or command to lint the codebase (e.g., scripts/lint.sh)."
+  },
+  "format_script": {
+    "type": "string",
+    "description": "Script or command to format the codebase (e.g., scripts/format.sh)."
+  },
+  "benchmark_script": {
+    "type": "string",
+    "description": "Script or command to run benchmarks (e.g., scripts/bench.sh)."
+  },
+  "tests_folder": {
+    "type": "string",
+    "description": "The folder containing the test cases and files for the project (e.g., tests/)."
+  },
+  "iteration_results_file": {
+    "type": "string",
+    "description": "The JSON file where each cycle of the agent's work (steps, outcomes, logs) is recorded."
+  },
+  "benchmark_results_file": {
+    "type": "string",
+    "description": "The JSON file where benchmark results are logged after each milestone."
+  },
+  "documentation_folder": {
+    "type": "string",
+    "description": "Path to the documentation folder (e.g., docs/)."
+  },
+  "deliverable": {
+    "type": "string",
+    "description": "Output directory or path for the final build/deliverable (e.g., dist/)."
+  },
+  "acceptance_criteria": {
+    "type": "array",
+    "items": { "type": "string" },
+    "description": "List of requirements for project completion (e.g., all tests pass, API docs complete, etc.)."
+  }
+}
