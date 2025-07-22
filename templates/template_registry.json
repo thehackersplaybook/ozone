@@ -1,0 +1,27 @@
+{
+  "dev-algo-v1": {
+    "path": "coding/development_algorithm_v1",
+    "description": "Development algorithm for new projects or features",
+    "config_model": "DevConfig"
+  },
+  "perf-opt-v1": {
+    "path": "coding/peformance_optimization_algorithm_v1",
+    "description": "Performance optimization algorithm for existing projects",
+    "config_model": "PerfOptConfig"
+  },
+  "code-review-v1": {
+    "path": "coding/code_review_algorithm_v1",
+    "description": "Systematic code review algorithm",
+    "config_model": "CodeReviewConfig"
+  },
+  "refactor-v1": {
+    "path": "coding/refactoring_algorithm_v1",
+    "description": "Code refactoring and modernization algorithm",
+    "config_model": "RefactorConfig"
+  },
+  "test-gen-v1": {
+    "path": "coding/test_generation_algorithm_v1",
+    "description": "Test suite generation and validation algorithm",
+    "config_model": "TestGenConfig"
+  }
+}

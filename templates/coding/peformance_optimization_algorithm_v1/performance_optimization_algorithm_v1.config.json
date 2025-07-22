@@ -1,0 +1,58 @@
+{
+  "PROJECT_NAME": {
+    "type": "string",
+    "description": "The official name of the project."
+  },
+  "project_codebase": {
+    "type": "string",
+    "description": "The codebase of the project you are working on. This is the codebase that you are optimizing for performance."
+  },
+  "library_name": {
+    "type": "string",
+    "description": "The name of the library or component being optimized for performance."
+  },
+  "component_type": {
+    "type": "string",
+    "description": "The type of software component being optimized (e.g., hash map, module, backend, etc.)."
+  },
+  "test_script": {
+    "type": "string",
+    "description": "The script or command to run tests and verify correctness (e.g., ./test.sh)."
+  },
+  "benchmark_script": {
+    "type": "string",
+    "description": "The script or command to run performance benchmarks (e.g., ./run_base_benchmark.sh)."
+  },
+  "iteration_results_file": {
+    "type": "string",
+    "description": "The JSON file where iteration benchmark results and metadata will be stored (e.g., iteration_alpha_results.json)."
+  },
+  "iteration_report_file": {
+    "type": "string",
+    "description": "The file where you record detailed human-readable reports of each iteration (e.g., iteration_alpha_report.md)."
+  },
+  "log_folder": {
+    "type": "string",
+    "description": "A folder (typically .gitignored) where you can store detailed logs, diffs, or metadata about each iteration (e.g., logs/ or .logs/)."
+  },
+  "tests_folder": {
+    "type": "string",
+    "description": "The folder containing the test cases and files for the project (e.g., tests/)."
+  },
+  "language": {
+    "type": "string",
+    "description": "The programming language used for the implementation (e.g., C, Python, Rust)."
+  },
+  "max_cycles": {
+    "type": "integer",
+    "description": "The maximum number of optimization cycles allowed before the process must stop and report."
+  },
+  "convergence_cycles": {
+    "type": "integer",
+    "description": "The number of consecutive cycles that must achieve or exceed the convergence delta before stopping."
+  },
+  "convergence_delta": {
+    "type": "number",
+    "description": "The required average performance improvement (in percent, as a positive number, e.g., 5.0) across 'convergence_cycles' to declare convergence and stop iterating."
+  }
+}
